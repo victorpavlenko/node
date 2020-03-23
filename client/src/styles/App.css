@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+input {
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  background: #000;
+  color: #ffdc32;
+  font-size: 1.2rem;
+  border: 1px solid #ffdc32;
+  margin-right: 1rem;
+  outline-color: #ffdc32;
+}
+
+input[type="submit"] {
+  font-weight: bolder;
+  background: #ffdc32;
+  color: #000;
+}
+
+input::placeholder {
+  color: #8e8e8e;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #61dafb;
+}
+a {
+  color: #61dafb;
+}
+
+.App-pagination {
+  display: flex;
+  justify-content: center;
+}
+.App-pagination div {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+td {
+  border: 1px solid white;
+  padding: .5rem;
+  text-align: left;
+}
+td:last-child {
+  font-weight: 200;
+  text-align: center;
+  padding: .5rem 2rem;
+}
+
+tr:nth-child(odd) {
+  background: #1d2025;
+}
+
+
+.file {
+  position: relative;
+  margin: 1rem 1rem;
+}
+.file label {
+  background: #ffdc32;
+  padding: 1rem;
+  color: #000;
+  font-weight: bold;
+  font-size: .8em;
+  transition: all .4s;
+}
+.file input {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  opacity: 0.0001;
+  cursor: pointer;
+}
+.file input:hover + label,
+.file input:focus + label {
+  background: #34495E;
+  color: #ffdc32;
+}
+
+ul {
+  padding: 0;
+}
+
+.App-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.App-list .fa-folder {
+  margin: 1rem 2rem;
+  color: #ffdc32;
+  font-size: 2.5rem
+}
+
+.App-list .fa-download {
+  margin: 0 2rem;
+  color: black
+}
+
+.App-list .fa-times {
+  margin: 1rem;
+  color: black;
+}
